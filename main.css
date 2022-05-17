@@ -1,0 +1,121 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'MontrealRegular', 'sans-serif';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 1em;
+}
+
+
+h1{
+    border-bottom: 4px solid red;
+    margin-bottom: 1em;
+}
+
+.flex{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;    
+}
+
+.puntos{
+    display: none;
+}
+
+.horux > * {
+    text-align: center;
+    
+}
+
+#cero{
+    display: none;
+    border:2px solid red;
+}
+
+
+.pie{
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1em;
+}
+
+a{
+    text-decoration: none;
+    border-top: 4px solid aquamarine;
+    padding-top: 0.7em;
+}
+
+
+@media (min-width: 400px) {
+    
+    .contenedor{
+        padding: 1.2em;
+    }
+
+    h1{
+        width: 80%;
+        margin-top: 2em;
+        margin: 0 auto;
+        font-size: 2.6rem;
+    }
+
+    
+    .pie{
+        font-size: 1.1rem;
+        margin-top: 2em;   
+    }
+}
+
+@media (min-width: 600px) {
+
+    h1{
+        width: 70%;
+        font-size: 2.8rem
+    }
+}
+
+
+@media (min-width: 800px){
+
+    h1{
+     font-size: 5rem;   
+    }
+
+    #hora, #minutos, .puntos{
+        font-size: 7rem;   
+    }
+
+    .contenedor p{
+        font-size: 1.1rem;
+    }
+
+    .flex{
+        flex-direction: row;
+    }
+
+    .puntos{
+        display: inline;
+        margin-bottom: 0.3em;
+        
+    }
+
+    .pie{
+     margin-top: 7em;   
+    }   
+}
